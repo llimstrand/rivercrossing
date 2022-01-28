@@ -11,3 +11,11 @@ func TestViewState(t *testing.T) {
 		t.Errorf("Feil, fikk %q, ønsket %q.", state, wanted)
 	}
 }
+
+func TestPutInBoat(t *testing.T) {
+	wanted := "sau"
+	state := PutInBoat()
+	if state != wanted {
+		t.Errorf("Feil, fikk %q, ønsket %q.", state, wanted)
+	}
+}
